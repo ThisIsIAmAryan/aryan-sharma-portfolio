@@ -41,7 +41,7 @@ export const projects = [
     technologies: ["Three.js", "JavaScript", "WebGL"],
     duration: "Mar 2025 - Present",
     github: "https://github.com/ThisIsIAmAryan/Crossy-Roads-Game",
-    liveDemo: "https://crossy-roads-game.vercel.app",
+    liveDemo: "https://crossy-roads.netlify.app/",
     image: "https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=450"
   },
   {
@@ -50,7 +50,7 @@ export const projects = [
     technologies: ["Next.js", "MongoDB", "Google Auth"],
     duration: "Aug 2024 - Oct 2024",
     github: "https://github.com/ThisIsIAmAryan/Futurepreneurs-10.0",
-    liveDemo: "https://futurepreneurs-10.vercel.app",
+    liveDemo: "https://futurepreneurs-100.vercel.app/",
     image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=450"
   },
   {
@@ -59,7 +59,7 @@ export const projects = [
     technologies: ["React", "Google Sheets", "Analytics"],
     duration: "Dec 2023 - Jan 2024",
     github: "https://github.com/ThisIsIAmAryan/VIn-Together",
-    liveDemo: "https://vin-together.vercel.app",
+    liveDemo: "https://v-in-together.vercel.app/",
     image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=450"
   }
 ];
@@ -99,10 +99,13 @@ export const certificates = [
   {
     title: "AWS Certified Cloud Practitioner",
     issuer: "Amazon Web Services",
-    level: "Foundational Level"
+    level: "Foundational Level",
+    documentUrl: "https://drive.google.com/file/d/10jabTKggUNb-b_hNjXFVavb-wF3nWxbB/view?usp=sharing"
   },
   {
-    title: "Certificate of Internship",
-    issuer: "Tiffin India"
+    title: "Internship Certificate",
+    issuer: "Itmtb Technologies",
+    level: "Software Development Intern",
+    documentUrl: "https://drive.google.com/file/d/1BaEUgk3du74HXTC2Q7XVywaVyTeRx1mu/view?usp=sharing"
   }
 ];

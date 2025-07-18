@@ -1,6 +1,6 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Briefcase, GraduationCap, Award } from 'lucide-react';
+import { MapPin, Calendar, Briefcase, GraduationCap, Award, ExternalLink } from 'lucide-react';
 import { experience, education, certificates } from '@/lib/constants';
 
 const Experience = () => {
@@ -106,17 +106,36 @@ const Experience = () => {
           <h3 className="text-2xl font-semibold text-slate-100 mb-8 text-center">Certificates & Achievements</h3>
           <div className="grid md:grid-cols-2 gap-6">
             {certificates.map((cert, index) => (
-              <Card key={index} className="bg-slate-800/50 border-slate-700/50 card-hover">
+              <Card 
+                key={index} 
+                className="bg-slate-800/50 border-slate-700/50 card-hover cursor-pointer group transition-all duration-300 hover:border-orange-500/50 hover:shadow-lg hover:shadow-orange-500/20"
+                onClick={() => window.open(cert.documentUrl, '_blank')}
+              >
                 <CardContent className="p-6">
-                  <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center">
-                      <Award className="w-6 h-6 text-white" />
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center space-x-4">
+                      <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center">
+                        <Award className="w-6 h-6 text-white" />
+                      </div>
+                      <div>
+                        <h4 className="text-lg font-semibold text-slate-100 group-hover:text-orange-300 transition-colors">
+                          {cert.title}
+                        </h4>
+                        <p className="text-slate-400">{cert.issuer}</p>
+                        {cert.level && (
+                          <Badge
+                          variant="outline"
+                          className="mt-1 border-2 border-gray-500 text-gray-300"
+                          >
+                          {cert.level}
+                          </Badge>
+                        )}
+                      </div>
                     </div>
-                    <div>
-                      <h4 className="text-lg font-semibold text-slate-100">{cert.title}</h4>
-                      <p className="text-slate-400">{cert.issuer}</p>
-                      {cert.level && <Badge variant="outline" className="mt-1">{cert.level}</Badge>}
-                    </div>
+                    <ExternalLink className="w-5 h-5 text-slate-400 group-hover:text-orange-400 transition-colors" />
+                  </div>
+                  <div className="mt-3 text-sm text-slate-500 group-hover:text-slate-400 transition-colors">
+                    Click to view certificate document
                   </div>
                 </CardContent>
               </Card>

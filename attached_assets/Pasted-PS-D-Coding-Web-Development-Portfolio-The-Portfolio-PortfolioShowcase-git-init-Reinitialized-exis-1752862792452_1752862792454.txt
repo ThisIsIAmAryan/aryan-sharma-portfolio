@@ -1,0 +1,130 @@
+PS D:\Coding\Web Development\Portfolio\The-Portfolio\PortfolioShowcase> git init
+Reinitialized existing Git repository in D:/Coding/Web Development/Portfolio/The-Portfolio/PortfolioShowcase/.git/
+PS D:\Coding\Web Development\Portfolio\The-Portfolio\PortfolioShowcase> git status
+On branch main
+nothing to commit, working tree clean
+PS D:\Coding\Web Development\Portfolio\The-Portfolio\PortfolioShowcase> git add .
+PS D:\Coding\Web Development\Portfolio\The-Portfolio\PortfolioShowcase> git commit -m "Aryan Sharma Portfolio"                
+On branch main
+nothing to commit, working tree clean
+PS D:\Coding\Web Development\Portfolio\The-Portfolio\PortfolioShowcase> git remote add origin https://github.com/ThisIsIAmAryan/aryan-sharma-portfolio.git
+PS D:\Coding\Web Development\Portfolio\The-Portfolio\PortfolioShowcase> git branch -M main
+>> git push -u origin main
+Enumerating objects: 153, done.
+Counting objects: 100% (153/153), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (151/151), done.
+Writing objects: 100% (153/153), 185.90 KiB | 1.36 MiB/s, done.
+Total 153 (delta 48), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (48/48), done.
+To https://github.com/ThisIsIAmAryan/aryan-sharma-portfolio.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+PS D:\Coding\Web Development\Portfolio\The-Portfolio\PortfolioShowcase> npm install
+npm warn deprecated @esbuild-kit/esm-loader@2.6.5: Merged into tsx: https://tsx.is
+npm warn deprecated @esbuild-kit/core-utils@3.3.2: Merged into tsx: https://tsx.is
+
+added 479 packages, and audited 480 packages in 52s
+
+64 packages are looking for funding
+  run `npm fund` for details
+
+11 vulnerabilities (3 low, 8 moderate)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+PS D:\Coding\Web Development\Portfolio\The-Portfolio\PortfolioShowcase> npm run db:push
+
+> rest-express@1.0.0 db:push
+> drizzle-kit push
+
+No config path provided, using default 'drizzle.config.ts'
+Reading config file 'D:\Coding\Web Development\Portfolio\The-Portfolio\PortfolioShowcase\drizzle.config.ts'
+DATABASE_URL, ensure the database is provisioned
+PS D:\Coding\Web Development\Portfolio\The-Portfolio\PortfolioShowcase> npm run db:push
+
+> rest-express@1.0.0 db:push
+> drizzle-kit push
+
+No config path provided, using default 'drizzle.config.ts'
+Reading config file 'D:\Coding\Web Development\Portfolio\The-Portfolio\PortfolioShowcase\drizzle.config.ts'
+DATABASE_URL, ensure the database is provisioned
+PS D:\Coding\Web Development\Portfolio\The-Portfolio\PortfolioShowcase> npm install dotenv
+
+added 1 package, and audited 481 packages in 4s
+
+65 packages are looking for funding
+  run `npm fund` for details
+
+11 vulnerabilities (3 low, 8 moderate)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+PS D:\Coding\Web Development\Portfolio\The-Portfolio\PortfolioShowcase> npm run db:push   
+
+> rest-express@1.0.0 db:push
+> drizzle-kit push
+
+No config path provided, using default 'drizzle.config.ts'
+Reading config file 'D:\Coding\Web Development\Portfolio\The-Portfolio\PortfolioShowcase\drizzle.config.ts'
+DATABASE_URL, ensure the database is provisioned
+PS D:\Coding\Web Development\Portfolio\The-Portfolio\PortfolioShowcase> # Test the connection
+>> node -e "
+>> const { Pool } = require('pg');
+>> const pool = new Pool({
+>>   connectionString: 'postgresql://neondb_owner:npg_2r1HRNKBqFsW@ep-young-field-ae9wftyd.c-2.us-east-2.aws.neon.tech/neondb?sslmode=require'
+>> });
+>> pool.query('SELECT NOW()', (err, res) => {
+>>   if (err) console.error('Error:', err);
+>>   else console.log('Success:', res.rows[0]);
+>>   pool.end();
+>> });
+>> "
+Success: { now: 2025-07-18T18:17:15.104Z }
+PS D:\Coding\Web Development\Portfolio\The-Portfolio\PortfolioShowcase> npm run db:push      
+
+> rest-express@1.0.0 db:push
+> drizzle-kit push
+
+No config path provided, using default 'drizzle.config.ts'
+Reading config file 'D:\Coding\Web Development\Portfolio\The-Portfolio\PortfolioShowcase\drizzle.config.ts'
+Using 'pg' driver for database querying
+[✓] Pulling schema from database...
+[i] No changes detected
+PS D:\Coding\Web Development\Portfolio\The-Portfolio\PortfolioShowcase> git add .
+warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'package-lock.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'package.json', LF will be replaced by CRLF the next time Git touches it
+PS D:\Coding\Web Development\Portfolio\The-Portfolio\PortfolioShowcase> git commit -m "Setting dev environment"   
+[main 537581a] Setting dev environment
+ 4 files changed, 16 insertions(+), 8 deletions(-)
+ delete mode 100644 .env.example
+PS D:\Coding\Web Development\Portfolio\The-Portfolio\PortfolioShowcase> git push -u origin main
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 673 bytes | 37.00 KiB/s, done.
+Total 5 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (4/4), completed with 4 local objects.
+To https://github.com/ThisIsIAmAryan/aryan-sharma-portfolio.git
+   55f9c36..537581a  main -> main
+branch 'main' set up to track 'origin/main'.
+PS D:\Coding\Web Development\Portfolio\The-Portfolio\PortfolioShowcase> npm run dev
+
+> rest-express@1.0.0 dev
+> NODE_ENV=development tsx server/index.ts
+
+'NODE_ENV' is not recognized as an internal or external command,
+operable program or batch file.
+PS D:\Coding\Web Development\Portfolio\The-Portfolio\PortfolioShowcase> 

@@ -71,7 +71,6 @@ export function serveStatic(app: Express) {
   // Try multiple possible paths for the dist directory
   const possiblePaths = [
     path.resolve(process.cwd(), "client/dist"),
-    path.resolve(__dirname, "../client/dist"),
     path.resolve(import.meta.dirname, "../client/dist"),
     path.resolve("./client/dist")
   ];

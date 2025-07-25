@@ -4,7 +4,7 @@ A modern, responsive portfolio website showcasing web development skills, projec
 
 ## 🚀 Live Demo
 
-[View Live Portfolio](https://aryan-sharma-portfolio.vercel.app)
+[https://aryan-sharma-portfolio-showcase.vercel.app](https://aryan-sharma-portfolio-showcase.vercel.app/)
 
 ## 📋 Features
 
